@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    const width = 20; // Chiều rộng của hình chữ nhật
+    const height = 5; // Chiều cao của hình chữ nhật
+
+    for (let i = 1; i <= height; i++) {
+        for (let j = 1; j <= width; j++) {
+            if (i === 1 || i === height || j === 1 || j === width){
+                document.write('*');
+            } else {
+                document.write('&nbsp;&nbsp;');
+            }
+        }
+        if (i < height) {
+            document.write('<br>');
+        }
+    }
+</script>
+</body>
+</html>

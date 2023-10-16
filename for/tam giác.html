@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    let h=5;
+    for (var i = 1; i<=h ; i++){
+        let r='';
+        for (j=1 ; j<=i; j++){
+            r+='*';
+        }
+        document.write( r +'<br>')
+    }
+
+    let s=1
+        for (var i = 1; i<=s ; i++){
+            let r='';
+            for (j=1 ; j<=i; j++){
+                r+=' ';
+            }
+            document.write( r +'<br>')
+        }
+
+    let h1=5;
+    for (i=h1 ; i>=1 ; i--){
+        let r='';
+        for (j=1 ; j<=i; j++){
+            r+='*';
+        }
+        document.write( r +'<br>')
+    }
+
+    let h2=5;
+    for (let i = 1; i <= h2; i++) {
+        let row = '';
+        // Thêm các khoảng trắng để dịch phải
+        for (let j = 1; j <= h2 - i; j++) {
+            row += '&nbsp;&nbsp;';
+        }
+        // Thêm dấu '*' cho từng dòng
+        for (let j = 1; j <= i; j++) {
+            row += '*' ;
+        }
+        document.write(row +'<br>');
+    }
+
+    let t=1
+    for (var i = 1; i<=t ; i++){
+        let r='';
+        for (j=1 ; j<=i; j++){
+            r+=' ';
+        }
+        document.write( r +'<br>')
+    }
+
+    let h3=5;
+    for (let i = h3; i >= 1; i--) {
+        let row = '';
+        for (let j = 1; j <= i; j++) {
+            row += '*';
+        }
+        for (let j = 1; j <= h3 - i; j++) {
+            row = '&nbsp;&nbsp;' + row;
+        }
+        document.write(row +'<br>');
+    }
+</script>
+</body>
+</html>
